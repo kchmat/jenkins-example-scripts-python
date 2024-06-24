@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     // Installer pip si ce n'est pas déjà fait
-                    sh "apt-get update && apt-get install -y python3-pip"
+                    sh "yum update && yum install -y python3-pip"
 
                     // Installer pywinrm
                     sh "pip3 install pywinrm"
