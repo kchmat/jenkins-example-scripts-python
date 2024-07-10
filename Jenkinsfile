@@ -25,5 +25,11 @@ pipeline {
         sh 'echo "Hello Amine"'
       }
     }
+    stage('PWD') {
+      steps {
+        //sh 'python hello.py'
+        sh 'pwd'
+      }
+    }
   }
 }
